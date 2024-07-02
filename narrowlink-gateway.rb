@@ -3,7 +3,7 @@ class NarrowlinkGateway < Formula
   homepage "https://github.com/narrowlink/narrowlink"
   url "https://github.com/narrowlink/narrowlink/archive/refs/tags/0.2.6.tar.gz"
   sha256 "6682e742431fa3496cbfd550039c6fe46c87fbce6a74d0d2c227cae38e8e2dd3"
-  license all_of: ["MPL-2.0", "AGPL-3.0-only"]
+  license "AGPL-3.0-only"
 
   # livecheck do
   #   url :stable
