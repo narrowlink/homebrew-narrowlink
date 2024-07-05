@@ -27,6 +27,14 @@ class NarrowlinkGateway < Formula
     system "cargo", "install", *std_cargo_args(path: "gateway")
   end
 
+  service do
+    run [opt_bin/"narrowlink-gateway"]
+    keep_alive true
+    working_dir var
+    log_path var/"log/narrowlink/gateway-access.log"
+    error_log_path var/"log/narrowlink/gateway-error.log"
+  end
+  
   test do
     assert_match "Narrowlink Gateway", shell_output("#{bin}/narrowlink-gateway --version")
   end
