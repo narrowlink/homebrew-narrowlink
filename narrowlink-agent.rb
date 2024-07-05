@@ -31,8 +31,8 @@ class NarrowlinkAgent < Formula
     run [opt_bin/"narrowlink-agent"]
     keep_alive true
     working_dir var
-    log_path var/"log/narrowlink/access.log"
-    error_log_path var/"log/narrowlink/error.log"
+    log_path var/"log/narrowlink/agent-access.log"
+    error_log_path var/"log/narrowlink/agent-error.log"
   end
   
   test do
